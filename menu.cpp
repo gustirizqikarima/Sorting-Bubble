@@ -2,6 +2,8 @@
 #include <conio.h>
 using namespace std;
 
+int data[100];
+int n; //untuk jumlah data
 
 void dMenu(){
 system("cls");
