@@ -9,7 +9,7 @@ cout<<"Aplikasi Sorting Bubble"<<"\n";
 cout<<"1. Masukkan data"<<"\n";            
 cout<<"2. Tampilkan data"<<"\n";            
 cout<<"3. Sorting asc"<<"\n";           
-cout<<"4. Sorting dsct"<<"\n";            
+cout<<"4. Sorting dsc"<<"\n";            
 cout<<"5. Exit"<<"\n";           
 cout<<"Masukan angka :";        
 
