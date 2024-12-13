@@ -16,12 +16,6 @@ cout<<"5. Exit"<<"\n";
 cout<<"Masukan angka :";        
 }
 
-void mPertama(string pesan){
-  system("cls");
-  cout<<"hallo saya menu "<<pesan;
-  getch();
-}
-
 void tukar(int *a,int *b){
   int t=*a;
   *a=*b;
@@ -60,9 +54,6 @@ void sortingDescending(int data[], int n) {
     }
     cout << "Data berhasil diurutkan secara descending!";
 }
-
-
-
 
 int main() {
     int data[100];
