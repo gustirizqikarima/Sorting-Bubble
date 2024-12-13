@@ -14,13 +14,12 @@ cout<<"3. Sorting asc"<<"\n";
 cout<<"4. Sorting dsc"<<"\n";            
 cout<<"5. Exit"<<"\n";           
 cout<<"Masukan angka :";        
-
 }
 
 void mPertama(string pesan){
-system("cls");
-cout<<"hallo saya menu "<<pesan;
-getch();
+  system("cls");
+  cout<<"hallo saya menu "<<pesan;
+  getch();
 }
 
 void tukar(int *a,int *b){
@@ -29,18 +28,35 @@ void tukar(int *a,int *b){
   *b=t;
 }
 
+
+
+
 int main() {
-char pl;
-do
-{
-    dMenu();
-    pl=getch();
-  switch (pl)
-  {
-   case '1':
-    /* code */
-    mPertama("pertama");
-    break;
+    int data[100];
+    char pl;
+
+    do {
+        dMenu();
+        pl = getch();
+
+        switch (pl) {
+            case '1': {
+                system("cls");
+                cout << "Masukkan jumlah data (1-100): ";
+                cin >> n;
+                if (n > 0 && n <= 100) {
+                    cout << "Masukkan " << n << " angka:\n";
+                    for (int i = 0; i < n; i++) {
+                        cout << "Data ke-" << (i + 1) << ": ";
+                        cin >> data[i];
+                    }
+                    cout << "\nData berhasil dimasukkan!";
+                } else {
+                    cout << "Jumlah data tidak valid. Harus antara 1-100.";
+                }
+                getch();
+                break;
+            }
    case '2':
     mPertama("ke- dua");
     /* code */ 
