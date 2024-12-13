@@ -50,6 +50,17 @@ void sortingAscending(int data[], int n) {
     cout << "Data berhasil diurutkan secara ascending!";
 }
 
+void sortingDescending(int data[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (data[j] < data[j + 1]) {
+                tukar(&data[j], &data[j + 1]);
+            }
+        }
+    }
+    cout << "Data berhasil diurutkan secara descending!";
+}
+
 
 
 
@@ -95,10 +106,16 @@ int main() {
                           getch();
                           break;
                       }
-            case '4':
-              mPertama("ke- empat");
-              /* code */
-              break;  
+            case '4': {
+                system("cls");
+                if (n > 0) {
+                    sortingDescending(data, n);
+                } else {
+                    cout << "Data kosong. Masukkan data terlebih dahulu!";
+                }
+                getch();
+                break;
+            }
             case '5':
               /* code */
               break;
