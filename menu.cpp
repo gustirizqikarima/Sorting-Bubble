@@ -28,6 +28,17 @@ void tukar(int *a,int *b){
   *b=t;
 }
 
+void tampilkanData(int data[], int n) {
+    if (n > 0) {
+        cout << "Data saat ini:\n";
+        for (int i = 0; i < n; i++) {
+            cout << "Data ke-" << (i + 1) << ": " << data[i] << "\n";
+        }
+    } else {
+        cout << "Data kosong. Masukkan data terlebih dahulu!";
+    }
+}
+
 
 
 
@@ -57,10 +68,12 @@ int main() {
                 getch();
                 break;
             }
-   case '2':
-    mPertama("ke- dua");
-    /* code */ 
-    break;  
+   case '2': {
+                system("cls");
+                tampilkanData(data, n);
+                getch();
+                break;
+            }
    case '3':
     mPertama("ke- tiga");
     /* code */
