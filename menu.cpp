@@ -117,17 +117,14 @@ int main() {
                 break;
             }
             case '5':
-              /* code */
-              break;
-            
+                break;
             default:
-              system("cls");
-              cout<<"Pilihan Tidak Tersedia";
-              getch();
-              break;
-            }
+                system("cls");
+                cout << "Pilihan Tidak Tersedia";
+                getch();
+                break;
+        }
+    } while (pl != '5');
 
-
-} while (pl!='5');
-  return 0;
+    return 0;
 }
